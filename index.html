@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="eclipse">
+        <svg height="200" width="200">
+            <mask id="moon">
+              <rect x="-200" y="0" width="800" height="200" style="fill:white;" />
+              <circle cx="100" cy="100" r="95" style="fill:black;" />
+            </mask>
+            <g id="sun-g" mask="url(#moon)">
+              <circle id="sun" cx="100" cy="100" r="100" style="fill:#DBBB34;" />
+            </g>
+          </svg>
+
+    </div>
+
+    <div id="earth" class="celestial">
+        <div class="building lg"></div>
+        <div class="building lg"></div>
+        <div class="building md"></div>
+        <div class="building md"></div>
+        <div class="building md"></div>
+        <div class="building md"></div>
+        <div class="building sm"></div>
+        <div class="building sm"></div>
+        <div class="building sm"></div>
+        <div class="building sm"></div>
+        <div class="building sm"></div>
+        <div class="building sm"></div>
+    </div>
+</body>
+</html>
