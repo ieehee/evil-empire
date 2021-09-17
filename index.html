@@ -7,21 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="background">
     <div class="eclipse">
-        <svg height="200" width="200">
-            <mask id="moon">
-              <rect x="-200" y="0" width="800" height="200" style="fill:white;" />
-              <circle cx="100" cy="100" r="95" style="fill:black;" />
-            </mask>
-            <g id="sun-g" mask="url(#moon)">
-              <circle id="sun" cx="100" cy="100" r="100" style="fill:#DBBB34;" />
-            </g>
-          </svg>
-
+        <div class="moon">
+        </div>
+        <div class="sun"></div>
+    </div>
+    <div class="title">
+        <!-- <img src="title.png"
+            alt="title logo handwrite"
+            class="title_logo"/> -->
+        <!-- <span>악의</span>
+        <span>무리</span> -->
     </div>
 
-    <div id="earth" class="celestial">
+    <div class="menu">
+        <h1 class="menu__mission-view">지령 확인</h1>
+        <div class="menu__mission">
+            <h1 class="mission">지령</h1>
+            <h2 class="mission">-  순 찰  -</h2>
+            <!-- 타이핑 효과 적용 예정 -->
+            <h3 class="mission">오늘은 동네 한 바퀴 돌고 오도록 해라.</h3>
+            <div class="menu__mission__answers">
+                <button type="submit">좋습니다</button>
+                <button type="submit">싫어요</button>
+            </div>
+        </div>
+        <h1 class="menu__setting">설정</h1>
+    </div>
+    <div class="earth celestial">
         <div class="building lg"></div>
         <div class="building lg"></div>
         <div class="building md"></div>
